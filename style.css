@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+
+.header{
+  height: 100vh;
+  width: 100%;   
+
+}
+
+nav{
+  padding: 30px;
+    margin: 10px 0px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    
+    
+
+}
+
+.navlink ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+
+}
+
+
+
+.navlink ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+.navlink ul li::after{
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  height: 2px;
+  background: black;
+  transition: 0.5s;
+
+
+}
+
+
+.navlink ul li:hover::after{
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  margin-left: 50px;
+ 
+  
+}
+
+.container{
+    top: 20%;
+    align-items: center;
+    transform: translateY(20%);
+    width: 100%;
+    position: absolute;
+    margin: 20px 30px 0px;
+}
+
+.content{
+    width: 50%;
+
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    animation-delay: 0.3s;
+}
+
+.content a{
+    border: 2px solid black;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    animation-delay: 0.7s;
+}
+
+.socials{
+  padding: 30px;
+  display: flex;
+  margin-left: -50px;
+}
+.socials ul li{
+  display: inline-block;
+  list-style: none;
+  border: none;
+}
+
+.socials ul li a{
+  border: none;
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 40px;
+    animation-delay: 0.7s;
+    line-height: -4px;
+    word-spacing: 2px;
+}
+.container-img{
+  margin-left: 80px;
+  margin-top: -60px;
+}
+
+.container-img img {
+  width: 500px;
+  margin-left: -30px;
+  
+}
+
+  .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:  moveup 0.5s  linear forwards;
+  }
+
+  @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+
+  .skill{
+    align-items: center;
+    width: 100%;
+    height:50vh;
+    justify-content: left;
+    margin-left: 40px;
+   animation-delay: 0.4s;
+   padding-top: 50px;
+   
+
+}
+
+  .contain p{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .skills{
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+
+  }
+
+  .skills h2{
+    font-size: 15px;
+    font-weight: 150;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+  }
+
+  .progress-bar{
+    width: 1200px;
+    background: gray;
+    border-radius: 10px;
+    height: 15px;
+  }
+
+  .progress-bar div{
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+float: right;
+background: #fff;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12px;
+    margin-right: -25px;
+    cursor: pointer;
+
+}
+
+
+.html{
+   background: black;
+   animation: html 1s linear forwards;
+}
+
+
+.css{
+    background: black;
+    animation: css 1s linear forwards;
+}
+
+
+.javascript{
+  background: black;
+  animation: javascript 1s linear forwards;
+}
+
+.php{
+    background: black;
+    animation: php 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid black;
+}
+
+.css span{
+    border: 1px solid black;
+}
+
+.javascript span{
+    border: 1px solid black;
+}
+
+.php span{
+    border: 1px solid black;
+}
+
+
+@keyframes html {
+
+  100%{
+    width: 86%;
+  }
+  
+}
+
+@keyframes css {
+  100%{
+    width: 76%;
+  }
+  
+}
+
+@keyframes javascript{
+  100%{
+    width:50%;
+  }
+  
+}
+
+@keyframes php {
+  100%{
+    width: 46%;
+  }
+  
+}
+
+.footer{
+  background:black;
+  height: 40vh;
+  width: 100%;
+    margin-top: 5%;
+display: inline-block;
+justify-content: space-between;
+align-items: center;
+color: white;
+text-align: center;
+
+}
+.footer p{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 40px;
+}
+.social-media {
+  display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 25px;
+
+}
+.social-media ul li{
+  display: inline-block;
+}
+
+
+
+/*----Media queery Starts Here-----*/
+@media(max-width: 600px){
+body{
+  width: 600px;
+}
+
+  nav{
+  
+    display: block;
+    width: 500px;
+  
+  }
+
+ .navlink ul li{
+  display: inline-flex;
+ }
+
+  .contain{
+    width: 400px;
+  }
+  .container{
+    width: 500px;
+  }
+
+  .content h1{
+    font-size: 30px;
+  }
+
+
+  .skills{
+    width: 300px;
+    justify-content: left;
+      text-align: left;
+     align-items: center;
+  }
+
+  .skills h2{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+
+  }
+
+  .progress-bar{
+    width: 400px;
+    background: gray;
+    border-radius: 10px;
+    height: 20px;
+  }
+
+  .progress-bar div{
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+
+background: #fff;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12px;
+    margin-right: -25px;
+    cursor: pointer;
+
+}
+
+
+.html{
+   background: black;
+   animation: html 1s linear forwards;
+}
+
+
+.css{
+    background: black;
+    animation: css 1s linear forwards;
+}
+
+
+.javascript{
+  background: black;
+  animation: javascript 1s linear forwards;
+}
+
+.php{
+    background: black;
+    animation: php 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid black;
+}
+
+.css span{
+    border: 1px solid black;
+}
+
+.javascript span{
+    border: 1px solid black;
+}
+
+.php span{
+    border: 1px solid black;
+}
+
+
+@keyframes html {
+  100%{
+    width: 86%;
+  }
+  
+}
+
+@keyframes css {
+  100%{
+    width: 76%;
+  }
+  
+}
+
+@keyframes javascript{
+  100%{
+    width:50%;
+  }
+  
+}
+
+@keyframes php {
+  100%{
+    width: 46%;
+  }
+  
+}
+
+  
+  .footer{
+    width: 500px;
+  }
+}
